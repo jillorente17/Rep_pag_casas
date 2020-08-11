@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> <!-- Enlace a google fonts-->
+    <title>Bienes raíces</title>
+    <link rel="stylesheet" href="/css/normalize.css"><!--normalize funciona para que se vea de la misma manera en todos lados, chrome, firefox, etc-->
+    <link rel="stylesheet" href="/css/style.css"> <!--siempre mi hoja de estilos al final-->
+</head>
+<body>
+
+        <!-- header se usa para el encabezado de la página -->
+        <!-- los id solo se pueden aplicar una vez a una sola etiqueta por documento, mientras que las clases pueden ser reutilizadas -->
+        <!-- no se pueden combinar los id en el css -->
+        <!-- se usa cuando se quiere navegar en página -->
+        <!-- al poner (.) y el nombre de la clase, automáticamente se crea el div -->
+    <header class="site-header "> 
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a target="_blank" href="http://netflix.com">Ir a Netflix</a>
+                </nav>
+            </div>
+            
+        </div>
+
+    </header>
+    <h1 class="fw-300 centrar-texto">Nuestro Blog</h1>
+ 
+    <main class="contenedor seccion contenido-centrado">
+        <article class="entrada-blog">
+            <div class="imagen">
+               <img src="img/blog1.jpg" alt="blog1">
+            </div>
+            <div class="texto-entrada">
+                <a href="#">
+                   <h4>Terraza en el techo de tu casa</h4>
+               </a>
+                   <p>Escrito el <span>6/9/2020</span> por: <span>  Admin</span></p>
+                   <p>Consejos para construir una terraza, con los mejores
+                       materiales y ahorrando dinero </p>
+           </div>
+       </article>
+
+       <article class="entrada-blog">
+           <div class="imagen">
+               <img src="img/blog2.jpg" alt="blog2">
+           </div>
+           <div class="texto-entrada">
+               <a href="entrada.html">
+                   <h4>Guía para la decoración de tu hogar</h4>
+               </a>
+               <p>Escrito el <span>6/9/2020</span> por: <span>Admin</span></p>
+               <p>Máximiza el espacio de tu hogar con esta guía. Aprende
+                   a combinar muebles y colores para darle vida a tu espacio </p>
+           </div>
+       </article>
+       <article class="entrada-blog">
+        <div class="imagen">
+            <img src="img/blog3.jpg" alt="blog2">
+        </div>
+        <div class="texto-entrada">
+            <a href="entrada.html">
+                <h4>Construye una alberca en tu hogar</h4>
+            </a>
+            <p>Escrito el <span>6/9/2020</span> por: <span>Admin</span></p>
+            <p>Máximiza el espacio de tu hogar con esta guía. Aprende
+                a combinar muebles y colores para darle vida a tu espacio </p>
+        </div>
+    </article><article class="entrada-blog">
+        <div class="imagen">
+            <img src="img/blog4.jpg" alt="blog2">
+        </div>
+        <div class="texto-entrada">
+            <a href="entrada.html">
+                <h4>Guía para la decoración de tu habitación</h4>
+            </a>
+            <p>Escrito el <span>6/9/2020</span> por: <span>Admin</span></p>
+            <p>Máximiza el espacio de tu hogar con esta guía. Aprende
+                a combinar muebles y colores para darle vida a tu espacio </p>
+        </div>
+    </article>
+    </main>
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a target="_blank" href="http://netflix.com">Ir a Netflix</a>
+                </nav>
+            <p class="copyright">  Todos los derechos reservados 2020 &copy;</p>
+        </div>
+        
+    
+    </footer>
+
+</body> 
+</html>

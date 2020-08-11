@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> <!-- Enlace a google fonts-->
+    <title>Bienes raíces</title>
+    <link rel="stylesheet" href="/css/normalize.css"><!--normalize funciona para que se vea de la misma manera en todos lados, chrome, firefox, etc-->
+    <link rel="stylesheet" href="/css/style.css"> <!--siempre mi hoja de estilos al final-->
+</head>
+<body>
+
+        <!-- header se usa para el encabezado de la página -->
+        <!-- los id solo se pueden aplicar una vez a una sola etiqueta por documento, mientras que las clases pueden ser reutilizadas -->
+        <!-- no se pueden combinar los id en el css -->
+        <!-- se usa cuando se quiere navegar en página -->
+        <!-- al poner (.) y el nombre de la clase, automáticamente se crea el div -->
+    <header class="site-header inicio"> 
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a target="_blank" href="http://netflix.com">Ir a Netflix</a>
+                </nav>
+            </div>
+            <h1>Venta de casas y departamentos exclusivos de lujo</h1>
+            
+        </div>
+
+    </header>
+
+<!-- si tienes dos clases, por ejemplo "encabezado mayuscula" y en el css "mayuscula" y "encabezado" ,los estilos se combinarán mientras haya un espacio -->
+        <!-- div es genérico, cuando no se cumplen las condiciones de header, section o main -->
+<!-- section se usa cuando hay un cambio de sección y hay un h#(1,2,3) siguiente a la sección  -->
+    <section class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
+
+        <div class="icono-nosotros">
+        <div class="icono">
+            <img src="img/icono1.svg" alt="ícono seguridad">
+            <h3>Seguridad</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quos vero officia fugit dolore consequatur molestias ab, 
+                perferendis sapiente voluptates numquam deserunt optio 
+                nam beatae soluta maiores suscipit! Mollitia, commodi aliquam!</p>
+        </div>
+        
+        
+        <div class="icono">
+            <img src="img/icono2.svg" alt="ícono de mejor precio">
+            <h3>El mejor precio</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Officia, consequatur dolores ducimus hic quidem totam nesciunt autem blanditiis, 
+                assumenda dignissimos quo tempore consequuntur voluptatibus odio, aliquid
+                illo nobis necessitatibus ad!</p>
+        </div>
+
+        
+        <div class="icono">
+            <img src="img/icono3.svg" alt="ícono de a tiempo">
+            <h3>A tiempo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laborum eum amet harum quos excepturi nemo ipsum, necessitatibus impedit veritatis consequuntur! Nemo possimus fuga
+            eos accusantium aliquam numquam! Dolorem, impedit pariatur?</p>
+        </div>
+        </div>
+    </section>
+    
+
+    <!-- Main se usa cuando se va a englobar el contenido principal de la página, de lo que trata 
+        ella -->
+    <main class="seccion contenedor" >
+     
+            <h2 class="fw-300 centrar-texto">Casas y depas en venta</h2>
+                <div class="contenedor-anuncios">
+
+                    <div class="anuncio">
+                            <img src="img/anuncio1.jpg" alt="anuncio1">
+                                <div class="contenido-anuncio"> 
+                                    <h3>Casa de lujo en el lago</h3>   
+                                    <p>casa en el lago con excelente vista, acabados de lujo con excelente precio</p>
+                                    <p class="precio">$ 3'000.000</p>
+
+                                    <ul class="iconos-caracteristicas"> <!-- Lista sin orden y ol lista ordenada (agrega números a cada elemento)-->
+                                        <li> 
+                                            <img src="img/icono_wc.svg" alt="icono_wc">
+                                            <p>3</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                                            <p>3</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/icono_dormitorio.svg" alt="icono_dormitorio">
+                                            <p>3</p>
+                                        </li>
+                                    </ul>
+
+                                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                                </div>
+                    </div>
+
+                
+
+
+                    <div class="anuncio">
+                            
+                                <img src="img/anuncio2.jpg" alt="anuncio2">
+                                    <div class="contenido-anuncio">
+                                        <h3>Casas terminadas de lujo</h3>
+                                        <p>Casa con diseño moderno, así como tecnología inteliente y amueblada</p>
+                                        <p class="precio">$ 2'000.000</p>
+
+                                        <ul class="iconos-caracteristicas"> <!-- Lista sin orden y ol lista ordenada (agrega números a cada elemento)-->
+                                            <li> 
+                                                <img src="img/icono_wc.svg" alt="icono_wc">
+                                                <p>3</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                                                <p>3</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/icono_dormitorio.svg" alt="icono_dormitorio">
+                                                <p>3</p>
+                                            </li>
+                                        </ul>
+                                        <a href="anuncio.htmle" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                                    </div>
+                    </div>
+
+                    <div class="anuncio">
+                            <img src="img/anuncio3.jpg" alt="anuncio3">
+                                <div class="contenido-anuncio">
+                                    <h3>Casas con Alberca</h3>    
+                                    <p>Casa con alberca y acabados de lujo. Excelente oportunidad</p>
+                                    <p class="precio">$ 3'000.000</p>
+
+                                    <ul class="iconos-caracteristicas"> <!-- Lista sin orden y ol lista ordenada (agrega números a cada elemento)-->
+                                        <li> 
+                                            <img src="img/icono_wc.svg" alt="icono_wc">
+                                            <p>3</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                                            <p>3</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/icono_dormitorio.svg" alt="icono_dormitorio">
+                                            <p>3</p>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                                </div>
+                    </div>
+
+                </div>
+            <div class="ver-todas">
+                <a href="anuncios.html" class="boton boton-verde">Ver todas</a>
+            </div>
+    </main>
+            
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+                <h2>Encuentra la casa de tus sueños</h2>
+                <p>Llena el formulario y un asesor se pondrá en contacto con usted</p>
+                
+                <a href="contacto.html" class="boton boton-amarillo">Contáctanos</a>
+        </div>
+    </section>
+
+<!-- article se usa en más que todo cuando hay blogs, clasificado o respuestas de foros, también cuando la sección habla por sí sola -->
+  <div class="seccion-inferior contenedor seccion">
+    <section class="blog">
+         <h3 class="centrar-texto fw-300">Nuestro blog</h3>
+
+
+         <article class="entrada-blog">
+             <div class="imagen">
+                <img src="img/blog1.jpg" alt="blog1">
+             </div>
+             <div class="texto-entrada">
+                 <a href="#">
+                    <h4>Terraza en el techo de tu casa</h4>
+                </a>
+                    <p>Escrito el <span>6/9/2020</span> por: <span>  Admin</span></p>
+                    <p>Consejos para construir una terraza, con los mejores
+                        materiales y ahorrando dinero </p>
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="imagen">
+                <img src="img/blog2.jpg" alt="blog2">
+            </div>
+            <div class="texto-entrada">
+                <a href="#">
+                    <h4>Guía para la decoración de tu hogar</h4>
+                </a>
+                <p>Escrito el <span>6/9/2020</span> por: <span>Admin</span></p>
+                <p>Máximiza el espacio de tu hogar con esta guía. Aprende
+                    a combinar muebles y colores para darle vida a tu espacio </p>
+            </div>
+        </article>
+
+
+    </section>
+
+<!-- blockquote siempre es para testimonios -->
+    <section class="testimoniales">
+             <h3 class="centrar-texto fw-300">Testimoniales</h3>
+                <div class="testimonial">
+                    <blockquote>
+                        El personal se comportó de una muy buena forma, y la casas
+                        que me ofrecieron cumple con todas mis expectativas
+                        <br><p>-Juan de la torre</p>
+                    </blockquote>
+                </div>
+    </section>
+
+  </div>
+    <!-- el footer también puede ir en otro lado como tablas de precio
+    y el autor de los testimoniales-->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a target="_blank" href="http://netflix.com">Ir a Netflix</a>
+                </nav>
+            <p class="copyright">  Todos los derechos reservados 2020 &copy;</p>
+        </div>
+        
+    
+    </footer>
+
+</body> 
+</html>
